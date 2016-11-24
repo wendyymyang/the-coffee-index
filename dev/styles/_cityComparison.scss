@@ -1,0 +1,78 @@
+.cityComparison {
+	display: none;
+	height: 100vh;
+	.wrapper {
+		width: 100%;
+		height: 100%;
+		.cityResults {
+			width: 100%;
+			height: 50%;
+			.textContainerOne, .imgContainerOne,
+			.textContainerTwo, .imgContainerTwo {
+				width: 50%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				float: left;
+				h5 {
+					font-size: 3.5rem;
+					margin: 10px 0;
+					color: $sunset;
+				}
+				img {
+					width: 100%; 
+					height: 100%;
+					border-radius: 8px;
+				}
+			}
+			.textContainerTwo {
+				width: calc(50% - 20px);
+				margin-left: 20px;
+			}
+			.cost {
+				display: flex;
+				justify-content: space-between;
+				width: 45%;
+				margin: 10px 0;
+				h6 {
+					font-size: 2.5rem;
+					color: $textGray;
+				}
+				p, i {
+					font-size: 3rem;
+					color: $sunset;
+				}
+				p {
+					font-family: 'Inconsolata', monospace;
+				}
+			}
+		}
+		.goAgain {
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			button, a {
+				width: 40%;
+				padding: 20px;
+				border-radius: 10px;
+				border: 1px solid $sunset;
+				background: none;
+				color: $sunset;
+				text-align: center;
+				font-size: 1.7rem;
+				letter-spacing: 1px;
+				font-family: 'Roboto', sans-serif;
+				i {
+					margin-left: 10px;
+				}
+				&:hover, &:focus {
+					background: $sunset;
+					border-color: $sunset;
+					color: white;
+				}
+			}
+		}
+	}
+}

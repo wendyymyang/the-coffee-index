@@ -1,0 +1,380 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a:focus {
+  outline: thin dotted; }
+
+a:active, a:hover {
+  outline: 0; }
+
+h1 {
+  font-size: 2em; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: 700; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: \201C \201D \2018 \2019; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -.5em; }
+
+sub {
+  bottom: -.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0; }
+
+button, input {
+  line-height: normal; }
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body, figure {
+  margin: 0; }
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+* {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif; }
+
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto; }
+
+h1, h2, h3, h4, h5, h6, ul, li, p {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+img {
+  max-width: 100%; }
+
+a, a:active {
+  text-decoration: none;
+  outline: 0; }
+
+.landing {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/background.jpeg");
+  background-position: center;
+  background-size: cover;
+  color: white; }
+  .landing .wrapper {
+    height: 100%;
+    padding: 0 20px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    position: relative; }
+    .landing .wrapper h1 {
+      font-size: 3.5rem;
+      letter-spacing: 1px;
+      font-family: "Roboto", sans-serif; }
+    .landing .wrapper h2 {
+      width: 45%;
+      font-size: 1.9rem;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.6px;
+      line-height: 2.7rem;
+      margin-top: 20px;
+      color: rgba(255, 255, 255, 0.5); }
+    .landing .wrapper h5 {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.5);
+      letter-spacing: 1px; }
+    .landing .wrapper ul {
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 30px; }
+      .landing .wrapper ul li {
+        margin: 0 15px; }
+        .landing .wrapper ul li a {
+          border: none;
+          font-size: 1.9rem;
+          background: none;
+          box-shadow: none;
+          color: rgba(255, 255, 255, 0.5);
+          transition: color 0.5s; }
+          .landing .wrapper ul li a:hover, .landing .wrapper ul li a:focus, .landing .wrapper ul li a:active {
+            color: #1cb495;
+            background: none; }
+    .landing .wrapper .start {
+      margin-top: 40px;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 10px;
+      background: #1cb495;
+      transition: background 0.5s; }
+      .landing .wrapper .start:hover, .landing .wrapper .start:focus {
+        background: #12725e; }
+      .landing .wrapper .start button {
+        background: none;
+        border: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: 0.6px; }
+    .landing .wrapper .disclosure {
+      margin-top: 20px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.4px;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      color: rgba(255, 255, 255, 0.5); }
+      .landing .wrapper .disclosure p {
+        font-size: 1.1rem; }
+        .landing .wrapper .disclosure p a {
+          color: rgba(255, 255, 255, 0.5);
+          border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+          transition: all 0.5s ease; }
+          .landing .wrapper .disclosure p a:hover, .landing .wrapper .disclosure p a:focus, .landing .wrapper .disclosure p a:active {
+            color: #1cb495;
+            border: none; }
+
+.location {
+  display: none;
+  height: 100vh;
+  color: #4e4f50;
+  background: #ecf0f1; }
+  .location .wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .location .wrapper h3 {
+      margin-top: 50px;
+      font-size: 2.9rem;
+      letter-spacing: 2px;
+      font-family: 'Lato', sans-serif;
+      font-weight: 700;
+      color: #ff4742; }
+  .location .city {
+    text-align: center;
+    width: 70%; }
+    .location .city h5 {
+      margin: 20px 0;
+      font-size: 2rem;
+      letter-spacing: 2px; }
+    .location .city .regionContainer {
+      width: 43%;
+      float: left;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 20px; }
+    .location .city .cityContainer {
+      width: 43%;
+      float: right;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 20px; }
+    .location .city label i {
+      font-size: 4rem; }
+    .location .city select {
+      margin: 0 30px;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      width: 70%;
+      height: 40px;
+      border: none;
+      padding: 5px 0; }
+  .location .cityOne h5 {
+    margin-top: 70px; }
+  .location .cityTwo {
+    display: none; }
+
+canvas {
+  border: 2px solid black;
+  width: 500px;
+  height: 200px; }
+
+.cityComparison {
+  display: none;
+  height: 100vh; }
+  .cityComparison .wrapper {
+    width: 100%;
+    height: 100%; }
+    .cityComparison .wrapper .cityResults {
+      width: 100%;
+      height: 50%; }
+      .cityComparison .wrapper .cityResults .textContainerOne, .cityComparison .wrapper .cityResults .imgContainerOne,
+      .cityComparison .wrapper .cityResults .textContainerTwo, .cityComparison .wrapper .cityResults .imgContainerTwo {
+        width: 50%;
+        height: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+            justify-content: center;
+        float: left; }
+        .cityComparison .wrapper .cityResults .textContainerOne h5, .cityComparison .wrapper .cityResults .imgContainerOne h5,
+        .cityComparison .wrapper .cityResults .textContainerTwo h5, .cityComparison .wrapper .cityResults .imgContainerTwo h5 {
+          font-size: 3.5rem;
+          margin: 10px 0;
+          color: #ff4742; }
+        .cityComparison .wrapper .cityResults .textContainerOne img, .cityComparison .wrapper .cityResults .imgContainerOne img,
+        .cityComparison .wrapper .cityResults .textContainerTwo img, .cityComparison .wrapper .cityResults .imgContainerTwo img {
+          width: 100%;
+          height: 100%;
+          border-radius: 8px; }
+      .cityComparison .wrapper .cityResults .textContainerTwo {
+        width: calc(50% - 20px);
+        margin-left: 20px; }
+      .cityComparison .wrapper .cityResults .cost {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+        width: 45%;
+        margin: 10px 0; }
+        .cityComparison .wrapper .cityResults .cost h6 {
+          font-size: 2.5rem;
+          color: #4e4f50; }
+        .cityComparison .wrapper .cityResults .cost p, .cityComparison .wrapper .cityResults .cost i {
+          font-size: 3rem;
+          color: #ff4742; }
+        .cityComparison .wrapper .cityResults .cost p {
+          font-family: 'Inconsolata', monospace; }
+    .cityComparison .wrapper .goAgain {
+      width: 80%;
+      margin: 0 auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      .cityComparison .wrapper .goAgain button, .cityComparison .wrapper .goAgain a {
+        width: 40%;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #ff4742;
+        background: none;
+        color: #ff4742;
+        text-align: center;
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        font-family: 'Roboto', sans-serif; }
+        .cityComparison .wrapper .goAgain button i, .cityComparison .wrapper .goAgain a i {
+          margin-left: 10px; }
+        .cityComparison .wrapper .goAgain button:hover, .cityComparison .wrapper .goAgain button:focus, .cityComparison .wrapper .goAgain a:hover, .cityComparison .wrapper .goAgain a:focus {
+          background: #ff4742;
+          border-color: #ff4742;
+          color: white; }

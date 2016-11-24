@@ -1,0 +1,98 @@
+.landing {
+	height: 100vh;
+	background: linear-gradient($backgroundBlack, $backgroundBlack) ,url('../../images/background.jpeg');
+	background-position: center;
+	background-size: cover;
+	color: white;
+	.wrapper {
+		height: 100%;
+		padding: 0 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		position: relative;
+		h1 {
+			font-size: 3.5rem;
+			letter-spacing: 1px;
+			font-family: $roboto;
+		}
+		h2 {
+			width: 45%;
+			font-size: 1.9rem;
+			font-family: $roboto;
+			font-weight: 400;
+			letter-spacing: 0.6px;
+			line-height: 2.7rem;
+			margin-top: 20px;
+			color: rgba(255, 255, 255, 0.5);
+		}
+		h5 {
+			font-size: 1.7rem;
+			font-weight: 400;
+			color: rgba(255, 255, 255, 0.5);
+			letter-spacing: 1px;
+		}
+		ul {
+			display: flex;
+			margin-top: 30px;
+			li {
+				margin: 0 15px;
+				a {
+					border: none;
+					font-size: 1.9rem;
+					background: none;
+					box-shadow: none;
+					color: rgba(255, 255, 255, 0.5);
+					transition: color 0.5s;
+					&:hover, &:focus, &:active {
+						color: $teal;
+						background: none;
+					}
+				}
+			}
+		}
+		.start {
+			margin-top: 40px;
+			padding: 10px 20px;
+			color: white;
+			border-radius: 10px;
+			background: $teal;
+			transition: background 0.5s;
+			&:hover, &:focus {
+				background: darken($teal, 15);
+			}
+			button {
+				background: none;
+				border: none;
+				color: white;
+				text-transform: uppercase;
+				font-family: $roboto;
+				font-weight: 500;
+				font-size: 1.5rem;
+				letter-spacing: 0.6px;
+			}
+		}
+		.disclosure {
+			margin-top: 20px;
+			font-family: $roboto;
+			font-weight: 300;
+			letter-spacing: 0.4px;
+			display: flex;
+			flex-direction: column;
+			color: rgba(255, 255, 255, 0.5);
+			p {
+				font-size: 1.1rem;
+				a {
+					color: rgba(255, 255, 255, 0.5);
+					border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+					transition: all 0.5s ease;
+					&:hover, &:focus, &:active {
+						color: $teal;
+						border: none;
+					}
+				}
+			}
+		}
+	}
+}

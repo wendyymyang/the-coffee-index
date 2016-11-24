@@ -1,0 +1,73 @@
+.location {
+	display: none;
+	height: 100vh;
+	color: $textGray;
+	background: #ecf0f1;
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		h3 {
+			margin-top: 50px;
+			font-size: 2.9rem;
+			letter-spacing: 2px;
+			font-family: 'Lato', sans-serif;
+			font-weight: 700;
+			color: $sunset;
+		}
+	}
+	.city {
+		text-align: center;
+		width: 70%;
+		h5 {
+			margin: 20px 0;
+			font-size: 2rem;
+			letter-spacing: 2px;
+		}
+		.regionContainer {
+			width: 43%;
+			float: left;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+		.cityContainer {
+			width: 43%;
+			float: right;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+		label {
+			i {
+				font-size: 4rem;
+			}
+		}
+		select {
+			margin: 0 30px;
+			font-size: 1.5rem;
+			letter-spacing: 1px;
+			width: 70%;
+			height: 40px;
+			border: none;
+			padding: 5px 0;
+		}
+	}
+	.cityOne {
+		h5 {
+			margin-top: 70px;
+		}
+	}
+	.cityTwo {
+		display: none;
+	}
+}
+
+canvas {
+	border: 2px solid black;
+	width: 500px;
+	height: 200px;
+}

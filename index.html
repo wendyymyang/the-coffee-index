@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Coffee Index</title>
+	<!-- ****** faviconit.com favicons ****** -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" sizes="16x16 32x32 64x64" href="favicon.ico">
+		<link rel="icon" type="image/png" sizes="196x196" href="images/favicons/favicon-192.png">
+		<link rel="icon" type="image/png" sizes="160x160" href="images/favicons/favicon-160.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96.png">
+		<link rel="icon" type="image/png" sizes="64x64" href="images/favicons/favicon-64.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16.png">
+		<link rel="apple-touch-icon" href="images/favicons/favicon-57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/favicon-114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/favicon-72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/favicon-144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicons/favicon-60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/favicon-120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/favicon-76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/favicon-152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/favicon-180.png">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="images/favicons/favicon-144.png">
+		<meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+		<!-- ****** faviconit.com favicons ****** -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://use.fontawesome.com/dd0bdb9aae.js"></script>
+	<link rel="stylesheet" href="public/styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto:300,400,500,700|Inconsolata:400" rel="stylesheet">
+</head>
+<body>
+	
+	<main class="landing" role="main">
+		<div class="wrapper">
+			<h1>THE COFFEE INDEX <i class="fa fa-coffee" aria-hidden="true"></i></h1>
+			<h2>A play off <em>The Big Mac Index</em>. Coffee is one of the most commonly-consumed beverages in the world, what are its prices around the world?</h2>
+			<ul>
+				<li><a href="https://twitter.com/wendersyang" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<li><a href="https://medium.com/@wendersyang" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+				<li><a href="https://ca.linkedin.com/in/wendyymyang" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a href="https://github.com/wendyymyang" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.instagram.com/wendersyang/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			</ul>
+			<a href="#location" class="start"><button>Get Started</button></a>
+			<div class="disclosure">
+				<p>&#169; 2016 Wendy Yang   |   Credits: <a href="https://nomadlist.com/" target="_blank">NomadList</a> API, <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+			</div>
+		</div>
+	</main>
+
+	<section class="question location" id="location">
+		<div class="wrapper">
+			<h3>Which two cities would you like to compare? <i class="fa fa-connectdevelop" aria-hidden="true"></i></h3>
+			<div class="city cityOne">
+				<h5>Choose wisely your first city...</h5>
+				<div class="regionContainer">
+					<label for="regionNameOne"><i class="fa fa-globe" aria-hidden="true"></i></label>
+					<select name="regionNameOne" id="regionNameOne">
+						<option value="regionDefault" selected>Select a region</option>
+						<option value="Africa">Africa</option>
+						<option value="Asia">Asia</option>
+						<option value="Europe">Europe</option>
+						<option value="Middle East">Middle East</option>
+						<option value="North America">North America</option>
+						<option value="Oceania">Oceania</option>
+						<option value="Solar System">Solar System</option>
+						<option value="South America">South America</option>
+					</select>
+				</div>
+				<div class="cityContainer">
+					<label for="cityNameOne"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+					<select name="cityNameOne" id="cityNameOne">
+						<option value="cityDefault" selected>Choose a city</option>
+					</select>	
+				</div>	
+			</div>
+			<div class="city cityTwo">
+				<h5>Choose carefully your second city...</h5>
+				<div class="regionContainer">
+					<label for="regionNameTwo"><i class="fa fa-globe" aria-hidden="true"></i></label>
+					<select name="regionNameTwo" id="regionNameTwo">
+						<option value="regionDefault" selected>Select a region</option>
+						<option value="Africa">Africa</option>
+						<option value="Asia">Asia</option>
+						<option value="Europe">Europe</option>
+						<option value="Middle East">Middle East</option>
+						<option value="North America">North America</option>
+						<option value="Oceania">Oceania</option>
+						<option value="Solar System">Solar System</option>
+						<option value="South America">South America</option>
+					</select>
+				</div>
+				<div class="cityContainer">
+					<label for="cityNameTwo"><i class="fa fa-map-marker" aria-hidden="true"></i></label>
+					<select name="cityNameTwo" id="cityNameTwo">
+						<option value="cityDefault" selected>Choose a city</option>
+					</select>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<section class="cityComparison" id="cityComparison">
+		<div class="wrapper">
+			<div class="cityResults cityResultsOne clearfix">
+				<div class="textContainerOne">
+					<h5></h5>
+					<div class="cost coffeeCostOne">
+						<h6>Coffee</h6>
+						<p></p>
+					</div>
+					<div class="cost airbnbCostOne">
+						<h6>Airbnb Median</h6>
+						<p></p>
+					</div>
+					<div class="cost freeWifiOne">
+						<h6>Wi-Fi Availability</h6>
+						<i></i>
+					</div>
+				</div>
+				<div class="imgContainerOne"></div>
+			</div>
+			<div class="cityResults cityResultsTwo clearfix">
+				<div class="imgContainerTwo"></div>
+				<div class="textContainerTwo">
+					<h5></h5>
+					<div class="cost coffeeCostTwo">
+						<h6>Coffee</h6>
+						<p></p>
+					</div>
+					<div class="cost airbnbCostTwo">
+						<h6>Airbnb Median</h6>
+						<p></p>
+					</div>
+					<div class="cost freeWifiTwo">
+						<h6>Wi-Fi Availability</h6>
+						<i></i>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	
+	<script>
+		$(function() {
+		  $('a[href*="#"]:not([href="#"])').click(function() {
+		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+		      var target = $(this.hash);
+		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		      if (target.length) {
+		        $('html, body').animate({
+		          scrollTop: target.offset().top
+		        }, 1000);
+		        return false;
+		      }
+		    }
+		  });
+		});
+	</script>
+	<script src="public/scripts/main.js"></script>
+
+</body>
+</html>
